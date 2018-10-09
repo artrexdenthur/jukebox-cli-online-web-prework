@@ -16,6 +16,12 @@ end
 
 def play(list)
   play_command = gets.chomp
-  play_command = play_command.to_i if play_command =~
+  if play_command =~ /\A\d+\Z/
+    # user entered a number
+    songs[play_command.to_i - 1]
+  else
+    # not a number, check for song title match
+    songs.match(play_command)
+    
 end
   
