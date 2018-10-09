@@ -14,5 +14,8 @@ def help
   puts /^(?=.*help) (?=.*list) (?=.*play) (?=.*exit) .+/m
 end
 
-def play(song)
+def play(list)
+  gets num
+  list[num-1]
+end
   
