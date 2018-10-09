@@ -20,8 +20,10 @@ def play(songs)
     # user entered a number
     play_command = play_command.to_i
     if play_command.between?(1, songs.length)
-      puts ''
-    puts songs[play_command.to_i - 1]
+      puts songs[play_command.to_i - 1]
+    else
+      # invalid number
+      puts 'invalid number'
   else
     # not a number, check for song title match
     puts songs.find { |song| song == play_command }
