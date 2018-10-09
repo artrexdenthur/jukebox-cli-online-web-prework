@@ -22,7 +22,7 @@ def play(songs)
     if play_command.between?(1, songs.length) # check that number is valid
       puts songs[play_command.to_i - 1]
     else
-      puts 'invalid number'
+      puts 'Invalid input, please try again'
     end
   else
     # not a number, check for song title match
