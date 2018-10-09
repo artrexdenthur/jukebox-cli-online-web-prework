@@ -23,12 +23,14 @@ def play(songs)
       puts songs[play_command.to_i - 1]
     else
       puts 'invalid number'
+    end
   else
     # not a number, check for song title match
     if songs.find { |song| song == play_command }
       puts play_command
     else
       puts 'invalid entry'
+    end
   end
     
 end
