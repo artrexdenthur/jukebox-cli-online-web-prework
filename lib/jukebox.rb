@@ -16,6 +16,6 @@ end
 
 def play(list)
   num = gets.chomp.to_i
-  puts list[num]
+  puts list[0]
 end
   
