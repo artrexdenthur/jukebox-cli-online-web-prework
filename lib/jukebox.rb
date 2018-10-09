@@ -18,7 +18,7 @@ def play(songs)
   play_command = gets.chomp
   if play_command =~ /\A\d+\Z/
     # user entered a number
-    songs[play_command.to_i - 1]
+    puts songs[play_command.to_i - 1]
   else
     # not a number, check for song title match
     songs.match(play_command)
