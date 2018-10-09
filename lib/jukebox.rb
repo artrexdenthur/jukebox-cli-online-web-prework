@@ -14,8 +14,8 @@ def help
   puts /^(?=.*help) (?=.*list) (?=.*play) (?=.*exit) .+/m
 end
 
-def play()
+def play(list)
   num = gets.chomp.to_i
-  list[5]
+  list
 end
   
