@@ -55,11 +55,11 @@ def run(songs)
     puts 'Please enter a command:'
     case gets.chomp
     when 'help'
-      puts 'help'
+      help
     when 'list'
-      puts 'list'
+      list(songs)
     when 'play'
-      puts 'play'
+      play(songs)
     when 'exit'
       break
     else
