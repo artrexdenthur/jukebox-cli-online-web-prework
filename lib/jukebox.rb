@@ -48,4 +48,10 @@ def exit_jukebox
   puts 'Goodbye'
   
 end
+
+def run
+  help
+  while true
+    puts 'Please enter a command:'
   
+end
