@@ -12,6 +12,17 @@
 # "Graduation Failed" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/07.mp3'
 # }
 
+park_dir = '~/jukebox-cli-online-web-prework/audio/Emerald-Park'
+my_songs = {
+  'Go Go GO' => "#{park_dir}/01.mp3",
+  'LiberTeens' => "#{park_dir}/02.mp3",
+  'Hamburg' => "#{park_dir}/03.mp3",
+  'Guiding Light' => "#{park_dir}/04.mp3",
+  'Wolf' => "#{park_dir}/05.mp3",
+  'Blue' => "#{park_dir}/06.mp3",
+  'Graduation Failed' => "#{park_dir}/07.mp3"
+}
+
 def help
   puts /^(?=.*help) (?=.*list) (?=.*play) (?=.*exit) .+/m
 end
