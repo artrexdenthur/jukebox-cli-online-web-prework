@@ -14,12 +14,11 @@ def help
   puts /^(?=.*help) (?=.*list) (?=.*play) (?=.*exit) .+/m
 end
 
-def play(list)
+def play(songs)
   play_command = gets.chomp
   if play_command =~ /\A\d+\Z/
     # user entered a number
-    # songs[play_command.to_i - 1]
-    songs[0]
+    songs[play_command.to_i - 1]
   else
     # not a number, check for song title match
     songs.match(play_command)
