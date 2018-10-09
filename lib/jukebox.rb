@@ -21,7 +21,7 @@ def play(songs)
     puts songs[play_command.to_i - 1]
   else
     # not a number, check for song title match
-    songs.match(play_command)
+    puts songs.match(play_command)
   end
     
 end
