@@ -13,15 +13,18 @@
 # }
 
 def help
-  #this method should be the same as in jukebox.rb
-
+  puts /^(?=.*help) (?=.*list) (?=.*play) (?=.*exit) .+/m
 end
+
 
 
 
 def list(my_songs)
   #this method is different! Collect the keys of the my_songs hash and 
   #list the songs by name
+  my_songs.keys.each do |key|
+    puts key
+  end
 end
 
 
