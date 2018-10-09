@@ -22,6 +22,7 @@ def play(list)
   else
     # not a number, check for song title match
     songs.match(play_command)
+  end
     
 end
   
