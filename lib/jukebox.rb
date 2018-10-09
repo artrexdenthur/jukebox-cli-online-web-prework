@@ -14,4 +14,5 @@ def help
   puts /^(?=.*help) (?=.*list) (?=.*play) (?=.*exit) .+/m
 end
 
-help
+def play(song)
+  
