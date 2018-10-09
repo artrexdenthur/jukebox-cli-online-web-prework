@@ -19,7 +19,7 @@ def play(songs)
   if play_command =~ /\A\d+\Z/
     # user entered a number
     play_command = play_command.to_i
-    if play_command > songs.length ||
+    if play_command.between? 
       puts ''
     puts songs[play_command.to_i - 1]
   else
