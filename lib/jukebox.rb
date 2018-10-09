@@ -16,6 +16,6 @@ end
 
 def play(list)
   play_command = gets.chomp
-  puts list[num-1]
+  play_command.to_i! if 
 end
   
