@@ -56,12 +56,16 @@ def run
     puts 'Please enter a command:'
     case gets.chomp
     when 'help'
+      puts 'help'
     when 'list'
+      puts 'list'
     when 'play'
+      puts 'play'
     when 'exit'
       break
     else
-    
+      input_error
+    end
   end
   exit_jukebox
 end
