@@ -51,7 +51,17 @@ end
 
 def run
   help
-  while true
+  exit = false
+  while exit = false
     puts 'Please enter a command:'
-  
+    case gets.chomp
+    when 'help'
+    when 'list'
+    when 'play'
+    when 'exit'
+      break
+    else
+    
+  end
+  exit_jukebox
 end
