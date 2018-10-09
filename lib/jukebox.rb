@@ -15,7 +15,7 @@ def help
 end
 
 def play(list)
-  gets num
+  gets num.
   list[num-1]
 end
   
