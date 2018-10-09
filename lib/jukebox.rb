@@ -36,6 +36,11 @@ def play(songs)
       input_error
     end
   end
-    
+end
+
+def list(songs)
+  songs.each do |song|
+    puts song
+  end
 end
   
