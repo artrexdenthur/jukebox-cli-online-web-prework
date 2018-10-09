@@ -11,5 +11,5 @@ songs = [
 ]
 
 def help
-  puts 'wut'
+  puts /^(?=.*help) (?=.*list) (?=.*play) (?=.*exit) .+/m
 end
