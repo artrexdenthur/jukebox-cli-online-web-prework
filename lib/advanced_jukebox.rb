@@ -36,8 +36,8 @@ def play(my_songs)
   #if it isn't, tell them their choice is invalid
   #if it is, play the song using the system 'open <file path>' syntax
   #get the file path of the song by looking it up in the my_songs hash
-  play_command = gets.chomp
-  if my_songs.keys.find { |title| title == play_command }
+  choice = my_songs.find { |title, path| title == gets.chomp }
+  if choice
     
   else
     puts 'invalid choice'
