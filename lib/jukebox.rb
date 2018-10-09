@@ -51,8 +51,7 @@ end
 
 def run(songs)
   help
-  exit = false
-  while exit = false
+  while true
     puts 'Please enter a command:'
     case gets.chomp
     when 'help'
