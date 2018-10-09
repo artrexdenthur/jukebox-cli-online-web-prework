@@ -15,7 +15,7 @@ def help
 end
 
 def play(list)
-  gets num.
+  num = gets.chomp.to_i
   list[num-1]
 end
   
