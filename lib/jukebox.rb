@@ -19,14 +19,16 @@ def play(songs)
   if play_command =~ /\A\d+\Z/
     # user entered a number
     play_command = play_command.to_i
-    if play_command.between?(1, songs.length)
+    if play_command.between?(1, songs.length) # check that number is valid
       puts songs[play_command.to_i - 1]
     else
-      # invalid number
       puts 'invalid number'
   else
     # not a number, check for song title match
-    puts songs.find { |song| song == play_command }
+    if songs.find { |song| song == play_command }
+      puts play_command
+    else
+      puts 'invalid entry'
   end
     
 end
